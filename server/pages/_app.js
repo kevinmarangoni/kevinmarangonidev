@@ -29,7 +29,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["*{padding:0;margin:0;box-sizing:border-box;font-size:20px;font-family:'Montserrat',sans-serif;color:#ffff;transition:all ease-in-out 0.2s;width:100%;}html,body{display:flex;height:fit-content;width:100vw;background-color:hsla(240,39%,20%,1);background-image:radial-gradient(at 99% 1%,hsla(281,95%,19%,1) 0px,transparent 50%),radial-gradient(at 0% 16%,hsla(281,60%,39%,0.4) 0px,transparent 50%);@media (max-width:767px){}}"]);
+
+const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["*{padding:0;margin:0;box-sizing:border-box;font-size:20px;font-family:'Montserrat Alternates',sans-serif;color:#ffff;transition:all ease-in-out 0.2s;width:100%;text-align:center;}html,body{display:flex;height:fit-content;width:100vw;background-color:hsla(240,39%,20%,1);background-image:radial-gradient(at 99% 1%,hsla(281,95%,19%,1) 0px,transparent 50%),radial-gradient(at 0% 16%,hsla(281,60%,39%,0.4) 0px,transparent 50%);@media (max-width:767px){}}"]);
 
 function MyApp({
   Component,

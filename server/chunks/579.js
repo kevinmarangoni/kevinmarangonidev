@@ -153,8 +153,26 @@ const Presentation = () => {
           })]
         })]
       })
-    }), /*#__PURE__*/jsx_runtime_.jsx(AboutContainer, {
-      children: "oi"
+    }), /*#__PURE__*/(0,jsx_runtime_.jsxs)(AboutContainer, {
+      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)(AboutMe, {
+        children: [/*#__PURE__*/jsx_runtime_.jsx("h2", {
+          children: "About me"
+        }), /*#__PURE__*/jsx_runtime_.jsx("p", {
+          children: "I have a Bachelor of Science in Biomedicine from USJT and a Master of Science inof health from the Federal University of S\xE3o Paulo, fascinated bybiology and passionate about computers and programming."
+        })]
+      }), /*#__PURE__*/(0,jsx_runtime_.jsxs)(AboutMe, {
+        children: [/*#__PURE__*/jsx_runtime_.jsx("h2", {
+          children: "Im looking for..."
+        }), /*#__PURE__*/jsx_runtime_.jsx("p", {
+          children: " ...opportunities to collaborate with projects and companies that I believe are concerned with the growth of society, that see people as people and respect individual differences and capabilities. "
+        })]
+      }), /*#__PURE__*/(0,jsx_runtime_.jsxs)(AboutMe, {
+        children: [/*#__PURE__*/jsx_runtime_.jsx("h2", {
+          children: "I want to..."
+        }), /*#__PURE__*/jsx_runtime_.jsx("p", {
+          children: " ...collaborate with my knowledge of Fullstack Tools and Frameworks and many other tools to attend the company\u2019s needs. I would like to work with a multidisciplinary teams, so I can always learn from different point of view of every coworker."
+        })]
+      })]
     })]
   });
 };
@@ -166,7 +184,7 @@ const PresentationSuper = external_styled_components_default().div.withConfig({
 const PresentationContent = external_styled_components_default().div.withConfig({
   displayName: "Presentation__PresentationContent",
   componentId: "sc-154ferp-1"
-})(["display:flex;flex-direction:row;align-items:center;border:1px solid rgba(255,255,255,0.075);border-radius:20px 30px 30px 20px;height:fit-content;@media (max-width:767px){flex-direction:column;}"]);
+})(["display:flex;flex-direction:row;align-items:center;border:1px solid rgba(255,255,255,0.075);border-radius:20px 30px 30px 20px;height:fit-content;margin-bottom:30px;@media (max-width:767px){flex-direction:column;}"]);
 const PresentationContainer = external_styled_components_default().div.withConfig({
   displayName: "Presentation__PresentationContainer",
   componentId: "sc-154ferp-2"
@@ -218,7 +236,11 @@ const PresentationTextSignP = external_styled_components_default().p.withConfig(
 const AboutContainer = external_styled_components_default().div.withConfig({
   displayName: "Presentation__AboutContainer",
   componentId: "sc-154ferp-14"
-})(["@media (max-width:767px){}"]);
+})(["display:flex;align-items:flex-start;justify-content:center;@media (max-width:767px){flex-direction:column;width:100%;align-items:center;justify-content:flex-start;}"]);
+const AboutMe = external_styled_components_default().div.withConfig({
+  displayName: "Presentation__AboutMe",
+  componentId: "sc-154ferp-15"
+})(["border:1px solid rgba(255,255,255,0.075);border-radius:20px;margin:20px;& h2{margin-bottom:20px;}& p{font-weight:200;}@media (max-width:767px){padding-left:20px;padding-right:20px;}&:hover{background-color:rgba(255,255,255,0.075);}"]);
 /* harmony default export */ const components_Presentation = (Presentation);
 
 /***/ })
