@@ -97,7 +97,7 @@ const WorkExperience = () => {
   const workList = [
     {
       logo: ormaLogo,
-      companyName: "Orma",
+      companyName: "Orma Carbon",
       howLong: "since feb. of 2022",
       description: "Technological Solutions for Sustainability",
       position: "Frontend Web Developer Jr.",

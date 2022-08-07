@@ -59,10 +59,10 @@ export default function Home() {
         <PageSection>
           <Presentation />
         </PageSection>
-
+{/* 
         <PageSection>
           <Portifolio />
-        </PageSection>
+        </PageSection> */}
 
         <PageSection>
           <WorkExperience />
@@ -76,9 +76,9 @@ export default function Home() {
           <SoftSkills />
         </PageSection>
 
-        <PageSection>
+        {/* <PageSection>
           <ContactMe />
-        </PageSection>
+        </PageSection> */}
 
       </ContentContainer>
     </PageContainer>
