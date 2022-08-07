@@ -84,7 +84,7 @@ const Presentation = () => {
         </AboutMe>
         <AboutMe>
           <h2>I want to...</h2>
-          <p> ...collaborate with my knowledge of Fullstack Tools and Frameworks and many other tools to attend the company's needs. I like to work in multidisciplinary teams, always learning from different point of view of every coworker.</p>
+          <p> ...collaborate with my knowledge of Fullstack Tools and Frameworks and many other tools to attend the company’s needs. I would like to work with a multidisciplinary teams, so I can always learn from different point of view of every coworker.</p>
         </AboutMe>
       </AboutContainer>
     </PresentationSuper>
