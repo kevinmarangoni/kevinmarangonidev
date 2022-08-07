@@ -1,18 +1,21 @@
 import {createGlobalStyle} from "styled-components"
 import React from 'react'
+import '../styles/global.css'
 
 const GlobalStyle = createGlobalStyle`
+
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   color: #ffff;
   transition: all ease-in-out 0.2s;
   /* border: 1px dashed #fff; */
   width: 100%;
-
+  text-align: center;
 }
 
 html, body {
@@ -40,10 +43,6 @@ html, body {
   height: fit-content;
   
   width: 100vw;
-
-
-
-
 
   background-color: hsla(240, 39%, 20%, 1);
   background-image:

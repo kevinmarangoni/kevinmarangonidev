@@ -68,13 +68,24 @@ const Presentation = () => {
                     </PresentationLogo>
                 )
               })
-            }
+          }
           </PresentationLogos>
         </PresentationText>
         </PresentationContainer>
       </PresentationContent>
       <AboutContainer>
-        oi
+        <AboutMe>
+          <h2>About me</h2>
+          <p>I have a Bachelor of Science in Biomedicine from USJT and a Master of Science inof health from the Federal University of São Paulo, fascinated bybiology and passionate about computers and programming.</p>
+        </AboutMe>
+        <AboutMe>
+          <h2>Im looking for...</h2>
+          <p> ...opportunities to collaborate with projects and companies that I believe are concerned with the growth of society, that see people as people and respect individual differences and capabilities. </p>
+        </AboutMe>
+        <AboutMe>
+          <h2>I want to...</h2>
+          <p> ...collaborate with my knowledge of Fullstack Tools and Frameworks and many other tools to attend the company’s needs. I would like to work with a multidisciplinary teams, so I can always learn from different point of view of every coworker.</p>
+        </AboutMe>
       </AboutContainer>
     </PresentationSuper>
   );
@@ -97,7 +108,7 @@ const PresentationContent = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.075);
   border-radius: 20px 30px 30px 20px;
   height: fit-content;
-
+  margin-bottom: 30px;
   @media (max-width: 767px){
     flex-direction: column;
   }
@@ -228,11 +239,40 @@ const PresentationTextSignP = styled.p`
 `
 
 const AboutContainer = styled.div`
-
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 
 @media (max-width: 767px){
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+`
+
+const AboutMe = styled.div`
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 20px;
+  
+  margin:20px;
+
+  & h2 {
+    margin-bottom: 20px;
+  }
+
+  & p {
+    font-weight: 200;
+  }
+
+@media (max-width: 767px){
+  padding-left:20px;
+  padding-right:20px;
 
 }
+&:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+  }
 `
 
 export default Presentation;
