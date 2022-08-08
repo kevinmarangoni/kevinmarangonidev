@@ -16,7 +16,11 @@ const GlobalStyle = createGlobalStyle`
   transition: all ease-in-out 0.2s;
   /* border: 1px dashed #fff; */
   width: 100%;
-  text-align: center;
+  @media (max-width: 1120px){
+      text-align: center;
+      align-items:center;
+      justify-content: center;
+    }
 }
 
 html, body {
@@ -35,7 +39,7 @@ html, body {
     radial-gradient(at 99% 1%, hsla(281, 95%, 19%, 1) 0px, transparent 50%),
     radial-gradient(at 0% 16%, hsla(281, 60%, 39%, 0.4) 0px, transparent 50%);
 
-    @media (max-width: 767px){
+    @media (max-width: 1120px){
       
 }
  */
@@ -50,7 +54,7 @@ html, body {
   radial-gradient(at 99% 1%, hsla(281, 95%, 19%, 1) 0px, transparent 50%),
   radial-gradient(at 0% 16%, hsla(281, 60%, 39%, 0.4) 0px, transparent 50%);
 
-  @media (max-width: 767px){
+  @media (max-width: 1120px){
       
     }
 }
