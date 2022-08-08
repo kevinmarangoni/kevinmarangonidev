@@ -9,7 +9,7 @@ import Education from "./components/Education";
 import Portifolio from "./components/Portifolio";
 import Presentation from "./components/Presentation";
 import SoftSkills from "./components/SoftSkills";
-// import Stacks from "./components/Stacks";
+import Stacks from "./components/Stacks";
 import WorkExperience from "./components/WorkExperience";
 
 
@@ -21,7 +21,7 @@ const PageContainer = styled.div`
   width: 100%;
 
 
-  @media (max-width: 767px){
+  @media (max-width: 1120px){
 
 }
 `;
@@ -34,7 +34,7 @@ const ContentContainer = styled.div`
   align-items: center;
 
 
-  @media (max-width: 767px){
+  @media (max-width: 1120px){
 
 }
 `;
@@ -46,7 +46,7 @@ const PageSection = styled.div`
   padding: 20px;
 
   
-  @media (max-width: 767px){
+  @media (max-width: 1120px){
     width: 100%;
 }
 `;
@@ -59,10 +59,16 @@ export default function Home() {
         <PageSection>
           <Presentation />
         </PageSection>
+
+        <PageSection>
+          <Stacks />
+        </PageSection>
+
 {/* 
         <PageSection>
           <Portifolio />
-        </PageSection> */}
+        </PageSection> 
+*/}
 
         <PageSection>
           <WorkExperience />
@@ -80,27 +86,12 @@ export default function Home() {
           <ContactMe />
         </PageSection> */}
 
+        Site under construction
+        <br/>
+        <br/>
+        <br/>
       </ContentContainer>
     </PageContainer>
   );
 }
 
-// const [windowSize, setWindowDimensions] = useState({
-//   width: undefined,
-//   height: undefined,
-// })
-// const [isResized, setResized] = useState(false)
-
-// const handleResize = () => {
-//   setWindowDimensions({
-//     width: window.innerWidth,
-//     height: window.innerHeight,
-//   })
-// }
-// useEffect(() => {
-//   handleResize()
-//   window.addEventListener("resize", handleResize)
-//   console.log(windowSize, isResized)
-//   window.removeEventListener('resize', handleResize)
-
-// }, [isResized])

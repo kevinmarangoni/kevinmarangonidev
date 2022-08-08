@@ -9,9 +9,9 @@ import ormaLogo from "./assets/img/t/orma logo.svg";
 
 const WorkSuper = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.075);
-  padding-top: 70px;
   width: 100%;
-  @media (max-width: 767px){
+  padding-top: 50px;
+  @media (max-width: 1120px) {
     width: 100%;
   }
 `;
@@ -23,7 +23,7 @@ const WorkCompanyContainer = styled.div`
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
-  margin-top: 30px; 
+  margin-top: 20px;
 `;
 
 const WorkCompanyCard = styled.div`
@@ -48,13 +48,10 @@ const WorkCompanyCard = styled.div`
     background-color: rgba(255, 255, 255, 0.075);
   }
 
-  @media (max-width: 767px){
+  @media (max-width: 1120px) {
     width: 100%;
-    margin:10px;
-    
-}
-
-
+    margin: 10px;
+  }
 `;
 
 const WorkCompanyCardLogo = styled.div`
@@ -110,7 +107,8 @@ const WorkExperience = () => {
   return (
     <WorkSuper>
       <WorkExpTitle>
-        <WorkIcon /> Work Experience </WorkExpTitle>
+        <WorkIcon /> Work Experience{" "}
+      </WorkExpTitle>
       <WorkCompanyContainer>
         {workList.map((item, index) => {
           return (
