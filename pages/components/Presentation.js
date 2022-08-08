@@ -80,25 +80,21 @@ const Presentation = () => {
         <AboutMe>
           <h2>About me</h2>
           <p>
-            I have a Bachelor of Science in Biomedicine from USJT and a Master
-            of Science inof health from the Federal University of São Paulo,
-            fascinated by biology and in deep love for computers and
-            programming.
+            I have a Bachelor of Science in Biomedicine and a Master
+            in Health Science’s, always fascinated by biology and in deep love with computers and programming.
           </p>
         </AboutMe>
         <AboutMe>
           <h2>Im looking for...</h2>
           <p>
-            {" "}
             ...opportunities to collaborate with projects and companies that I
             believe are concerned with the growth of society, that see people as
-            people and respect individual differences and capabilities.{" "}
+            people and respect individual differences and capabilities.
           </p>
         </AboutMe>
         <AboutMe>
           <h2>I want to...</h2>
           <p>
-            {" "}
             ...collaborate with my knowledge of Fullstack Tools, Frameworks and
             many other tools to attend the company’s needs. I would like to work
             with a multidisciplinary teams, so I can always learn from different
@@ -241,12 +237,14 @@ const AboutContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 20px;
 
   @media (max-width: 1120px) {
     flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: flex-start;
+    padding: 20px;
   }
 `;
 
@@ -262,6 +260,7 @@ const AboutMe = styled.div`
 
   & p {
     font-weight: 200;
+    font-size: 14px;
   }
 
   @media (max-width: 1120px) {
