@@ -1,5 +1,6 @@
 import {createGlobalStyle} from "styled-components"
 import React from 'react'
+import Head from 'next/head'
 import '../styles/global.css'
 
 const GlobalStyle = createGlobalStyle`
@@ -58,6 +59,10 @@ html, body {
 function MyApp({ Component, pageProps }) {
   return (
   <>
+    <Head>
+      <title>Kevin Marangoni</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
     <GlobalStyle />
     <Component {...pageProps} />
   </>
