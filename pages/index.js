@@ -86,10 +86,6 @@ export default function Home() {
           <ContactMe />
         </PageSection> */}
 
-        Site under construction
-        <br/>
-        <br/>
-        <br/>
       </ContentContainer>
     </PageContainer>
   );

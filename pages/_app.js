@@ -23,29 +23,11 @@ const GlobalStyle = createGlobalStyle`
     }
 }
 
-html, body {
-/*   
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  min-height: 100vh;
-  min-width: 70%;
-  max-height: fit-content;
-  justify-content: center;
-  align-items: center;
-
-  background-color: hsla(240, 39%, 20%, 1);
-  background-image:
-    radial-gradient(at 99% 1%, hsla(281, 95%, 19%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 16%, hsla(281, 60%, 39%, 0.4) 0px, transparent 50%);
-
-    @media (max-width: 1120px){
-      
-}
- */
+html{
 
   display: flex;
   height: fit-content;
+  padding:40px;
   
   width: 100vw;
 
@@ -55,7 +37,7 @@ html, body {
   radial-gradient(at 0% 16%, hsla(281, 60%, 39%, 0.4) 0px, transparent 50%);
 
   @media (max-width: 1120px){
-      
+      padding:0px;
     }
 }
 `

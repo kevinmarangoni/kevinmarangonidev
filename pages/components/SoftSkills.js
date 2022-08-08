@@ -20,7 +20,7 @@ const SoftSkills = () => {
     {
       title: "Positive Attitude",
       description:
-        "Start each day with a positive thought and a grateful heart.",
+        "“Start each day with a positive thought and a grateful heart.”",
       quote: "Roy T. Bennett",
     },
     {
@@ -56,9 +56,11 @@ const SoftSkills = () => {
         {softList.map((item, index) => {
           return (
             <SoftskillCardContainer key={index + 1}>
-              <CardTitle>{item.title}</CardTitle>
+              <CardTitle>
+                {item.title}
+              </CardTitle>
               <CardQuote>
-                {item.description} ― {item.quote}
+                {item.description}<span> ― {item.quote}</span>
               </CardQuote>
             </SoftskillCardContainer>
           );
@@ -70,30 +72,43 @@ const SoftSkills = () => {
 
 const SoftskillsSuper = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.075);
-  width: 100vw;
-  flex-wrap: wrap;
-`;
-const SoftskillCardContainer = styled.div`
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  padding-top:50px;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 20px;
+
+`;
+
+const SoftskillsContent = styled.div`
+  display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  justify-content: space-around;
+  padding: 20px;
+`;
+
+const SoftskillCardContainer = styled.div`
+
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.075);
-  padding-top: 70px;
-  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-around;
+  width: 46%;
+  margin: 10px;
+  padding: 20px;
+
   &:hover {
     background-color: rgba(255, 255, 255, 0.075);
   }
   @media (max-width: 1120px) {
     width: 100%;
     margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 20px;
   }
 `;
@@ -104,12 +119,19 @@ const SoftskillsTitleContainer = styled.div`
   flex-direction: column;
 `;
 
-const SoftskillsContent = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+const CardTitle = styled.div`
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
 `;
+const CardQuote = styled.div`
+  font-size: 12px;
+  font-style: italic;
 
-const CardTitle = styled.div``;
-const CardQuote = styled.div``;
+  & span {
+    font-size: 12px;
+    font-weight: 800;
+  }
+`;
 
 export default SoftSkills;
