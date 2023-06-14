@@ -6,6 +6,7 @@ import styled from "styled-components";
 import WorkIcon from "@mui/icons-material/Work";
 
 import ormaLogo from "./assets/img/t/orma logo.svg";
+import gssLogo from "./assets/img/t/gss.svg";
 
 const WorkSuper = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.075);
@@ -25,7 +26,7 @@ const WorkCompanyContainer = styled.div`
   width: 100%;
   flex-wrap: wrap;
   margin-top: 20px;
-  padding: 20px
+  padding: 20px;
 `;
 
 const WorkCompanyCard = styled.div`
@@ -72,8 +73,7 @@ const WorkCompanyCardP = styled.div`
 `;
 
 const WorkCompanyCardSpan = styled.span`
-font-size: 15px;
-
+  font-size: 15px;
 `;
 
 const WorkExpTitle = styled.div`
@@ -84,10 +84,10 @@ const WorkExpTitle = styled.div`
 `;
 
 const LogoWrapper = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
 `;
 
 const WorkExperience = () => {
@@ -95,46 +95,63 @@ const WorkExperience = () => {
     {
       logo: ormaLogo,
       companyName: "Orma Carbon",
-      howLong: "since feb. of 2022",
+      howLong: "since feb. 2022 to Oct. 2022",
       description: "Technological Solutions for Sustainability",
       position: "Frontend Web Developer Jr.",
       act: "Develops ReactJs/NextJs applications for the company",
       website: "https://www.orma.eco",
-      isCurrent: true,
+      isCurrent: false,
+    },
+    {
+      logo: gssLogo,
+      companyName: "GSS Carbono e Sustentabilidade",
+      howLong: "since Oct. of 2022 to Apr. 2023",
+      description: "Technological Solutions for Sustainability",
+      position: "Fullstack Web Developer Jr.",
+      act: "Develops ReactJs/NextJs and Node.Js applications for the company",
+      website: "https://www.gss.eco",
+      isCurrent: false,
     },
   ];
 
   return (
     <WorkSuper>
       <WorkExpTitle>
-        <WorkIcon /> Work Experience{" "}
+        <WorkIcon /> Work Experience
       </WorkExpTitle>
       <WorkCompanyContainer>
         {workList.map((item, index) => {
           return (
-              <WorkCompanyCard key={index + 1}>
-                <WorkCompanyCardLogo>
-                  <LogoWrapper>
-                    <Image src={item.logo} width={100} height={50} alt={item.companyName + " logo"} />
-                  </LogoWrapper>
-                </WorkCompanyCardLogo>
-                <WorkCompanyCardP>
-                  <h2>{item.companyName} - {item.howLong}</h2>
-                </WorkCompanyCardP>
-                <WorkCompanyCardSpan>{item.description}</WorkCompanyCardSpan>
-                <br />
-                <WorkCompanyCardP>
-                  <WorkCompanyCardSpan>
-                    <h2>{item.position}</h2>
-                  </WorkCompanyCardSpan>
-                </WorkCompanyCardP>
-                <WorkCompanyCardP>
-                  <WorkCompanyCardSpan>{item.act}</WorkCompanyCardSpan>
-                </WorkCompanyCardP>
-                <WorkCompanyCardP>
-                  <a href={item.website}>Website</a>
-                </WorkCompanyCardP>
-              </WorkCompanyCard>
+            <WorkCompanyCard key={index + 1}>
+              <WorkCompanyCardLogo>
+                <LogoWrapper>
+                  <Image
+                    src={item.logo}
+                    width={200}
+                    height={35}
+                    alt={item.companyName + " logo"}
+                  />
+                </LogoWrapper>
+              </WorkCompanyCardLogo>
+              <WorkCompanyCardP>
+                <h2>
+                  {item.companyName} - {item.howLong}
+                </h2>
+              </WorkCompanyCardP>
+              <WorkCompanyCardSpan>{item.description}</WorkCompanyCardSpan>
+              <br />
+              <WorkCompanyCardP>
+                <WorkCompanyCardSpan>
+                  <h2>{item.position}</h2>
+                </WorkCompanyCardSpan>
+              </WorkCompanyCardP>
+              <WorkCompanyCardP>
+                <WorkCompanyCardSpan>{item.act}</WorkCompanyCardSpan>
+              </WorkCompanyCardP>
+              <WorkCompanyCardP>
+                <a href={item.website}>Website</a>
+              </WorkCompanyCardP>
+            </WorkCompanyCard>
           );
         })}
       </WorkCompanyContainer>

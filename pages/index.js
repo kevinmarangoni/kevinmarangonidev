@@ -64,11 +64,9 @@ export default function Home() {
           <Stacks />
         </PageSection>
 
-{/* 
         <PageSection>
           <Portifolio />
         </PageSection> 
-*/}
 
         <PageSection>
           <WorkExperience />

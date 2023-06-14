@@ -19,22 +19,24 @@ import motion from "./assets/img/t/framer-motion.png";
 import mui from "./assets/img/t/mui.png"
 import rest from "./assets/img/t/rest.png"
 import velo from "./assets/img/t/velo.png"
+import mongodb from "./assets/img/t/mongodb.svg"
 
 const stacksList = [
-    { logo: html, name: "HTML5" },
-    { logo: css, name: "CSS3" },
-    { logo: js, name: "Javascript" },
-    { logo: ts, name: "Typescript" },
-    { logo: next, name: "NextJS" },
-    { logo: react, name: "ReactJS" },
-    { logo: node, name: "NodeJS" },
-    { logo: sc, name: "Styled Components" },
-    { logo: docker, name: "Docker" },
-    { logo: actions, name: "Actions" },
-    { logo: motion, name: "Framer Motion" },
-    { logo: mui, name: "Material UI" },
-    { logo: rest, name: "REST API" },
-    { logo: velo, name: "Wix Velo" },
+    { logo: html, name: "HTML5", skill: 4},
+    { logo: css, name: "CSS3", skill: 4},
+    { logo: js, name: "Javascript", skill: 4},
+    { logo: ts, name: "Typescript", skill: 3},
+    { logo: next, name: "NextJS", skill: 4},
+    { logo: react, name: "ReactJS", skill: 4},
+    { logo: node, name: "NodeJS", skill: 3},
+    { logo: mongodb, name: "MongoDB", skill: 3},
+    { logo: sc, name: "Styled Components", skill: 3},
+    { logo: docker, name: "Docker", skill: 3},
+    { logo: actions, name: "Actions", skill: 3},
+    { logo: motion, name: "Framer Motion", skill: 3},
+    { logo: mui, name: "Material UI", skill: 3},
+    { logo: rest, name: "REST API", skill: 4},
+    { logo: velo, name: "Wix Velo", skill: 4},
   ];
 
 const Stacks = () => {
@@ -50,7 +52,7 @@ const Stacks = () => {
             {stacksList.map((item, index) => {
             return (
                 <StacksLogo key={index + 1}>
-                    <Wrapper><Image src={item.logo} alt={"html logo"} /></Wrapper>
+                    <Wrapper><Image src={item.logo} alt={"logo"} /></Wrapper>
                     <p>{item.name}</p>
                 </StacksLogo>
              );
@@ -134,6 +136,7 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 60px;
+    height: 60px;
 `
 
 export default Stacks
