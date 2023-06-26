@@ -1,30 +1,30 @@
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import lattes from "./assets/img/t/Lattes.png";
+import lattes from "/pages/components/assets/img/t/Lattes.png";
 
-import html from "./assets/img/t/html.png";
-import css from "./assets/img/t/css.png";
-import js from "./assets/img/t/js.png";
-import next from "./assets/img/t/next2.png";
-import react from "./assets/img/t/React2.png";
-import node from "./assets/img/t/node.png";
-import ts from "./assets/img/t/ts.png";
-import sc from "./assets/img/t/styled.png";
-import docker from "./assets/img/t/docker.png";
-import actions from "./assets/img/t/actions.png";
-import motion from "./assets/img/t/framer-motion.png";
-import mui from "./assets/img/t/mui.png"
-import rest from "./assets/img/t/rest.png"
-import velo from "./assets/img/t/velo.png"
-import mongodb from "./assets/img/t/mongodb.svg"
+import html from "/pages/components/assets/img/t/html.png";
+import css from "/pages/components/assets/img/t/css.png";
+import js from "/pages/components/assets/img/t/js.png";
+import next from "/pages/components/assets/img/t/next2.png";
+import react from "/pages/components/assets/img/t/React2.png";
+import node from "/pages/components/assets/img/t/node.png";
+import ts from "/pages/components/assets/img/t/ts.png";
+import sc from "/pages/components/assets/img/t/styled.png";
+import docker from "/pages/components/assets/img/t/docker.png";
+import actions from "/pages/components/assets/img/t/actions.png";
+import motion from "/pages/components/assets/img/t/framer-motion.png";
+import mui from "/pages/components/assets/img/t/mui.png"
+import rest from "/pages/components/assets/img/t/rest.png"
+import velo from "/pages/components/assets/img/t/velo.png"
+import mongodb from "/pages/components/assets/img/t/mongodb.svg"
 
-import ormaLogo from "./assets/img/t/orma logo.svg";
-import gssLogo from "./assets/img/t/gss.svg";
+import ormaLogo from "/pages/components/assets/img/t/orma logo.svg";
+import gssLogo from "/pages/components/assets/img/t/gss.svg";
 
-import etec from "./assets/img/t/etec.png";
-import unimonte from "./assets/img/t/unimonte.png";
-import unifesp from "./assets/img/t/unifesp.png";
+import etec from "/pages/components/assets/img/t/etec.png";
+import unimonte from "/pages/components/assets/img/t/unimonte.png";
+import unifesp from "/pages/components/assets/img/t/unifesp.png";
 
 
 
@@ -163,6 +163,16 @@ export const ptBR = {
         linkedin: "https://www.linkedin.com/in/kevin-marangoni-1a3a17127/",
         lattes: "http://lattes.cnpq.br/5620060448568039",
         instagram: "https://www.instagram.com/kevinmarangoni/"
+      },
+      language:[
+        {name: "Português",skill: 5,},
+        {name: "Inglês",skill: 4,},
+        {name: "Espanhol",skill: 2,},
+      ],
+      contact: {
+        phone: "+55 13 98135-7393",
+        whatsapp: "+55 13 98135-7393",
+        email: "kevin-marangoni_@hotmail.com",
       },
       info: {
         about: "Tenho Bacharelado em Biomedicina e Mestrado em Ciências da Saúde, sempre fascinado pela biologia e apaixonado por computadores e programação.",
