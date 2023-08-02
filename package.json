@@ -1,5 +1,5 @@
 {
-  "name": "curriculum",
+  "name": "boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,20 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.9.3",
-    "@react-hook/window-size": "^3.0.7",
-    "child_process": "^1.0.2",
-    "next": "^12.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^5.3.5",
-    "window-size": "^1.1.1"
-  },
-  "devDependencies": {
-    "eslint": "8.19.0",
-    "eslint-config-next": "12.2.2"
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "axios": "^1.4.0",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^6.0.5",
+    "typescript": "5.1.6"
   }
 }
