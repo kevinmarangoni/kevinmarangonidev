@@ -2,18 +2,18 @@ import {ITheme} from '@/types/theme'
 
 export const dark:ITheme = {
     background:{
-        primary: '#222831',
-        secondary: '#393E46',
+        primary: '#6528F7',
+        secondary: '#A076F9',
     } ,
-    highlight: '#00ADB5',
-    font: '#EEEEEE',
+    highlight: '#D7BBF5',
+    font: '#FFFBF5',
 }
 
 export const light:ITheme = {
     background:{
-        primary: '#ffffff',
-        secondary: '#F6F5F7',
+        primary: '#FFFBF5',
+        secondary: '#D7BBF5',
     },
-    highlight: '#FF6B6B',
-    font: '#333333',
+    highlight: '#6528F7',
+    font: '#A076F9',
 };
