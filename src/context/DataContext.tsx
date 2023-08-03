@@ -1,8 +1,9 @@
 import React, {createContext} from 'react'
 import {IChildrenProps} from '@/types/props.d'
-import * as data from "@data/data"
+import {ptBR as data} from "@data/data"
+import { Data } from '@/types/data'
 
-export const DataContext: React.Context<Object> = createContext<Object>({} as Object)
+export const DataContext: React.Context<Object> = createContext<Object>({} as Data)
 
 const Data:React.FC<IChildrenProps> = ({children}) => {
   return (
